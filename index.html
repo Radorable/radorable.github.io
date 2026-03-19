@@ -7,5 +7,19 @@
 </head>
 <body>
     <h1>Hello !</h1>
+    <script>
+        let visitor = prompt("Hello visitor, who are you ?", "");
+
+if (visitor === "RaDo") {
+  let userName = prompt(`No, you're not ${visitor}. Tell me you're real name.`, "");
+  if (userName === visitor) {
+    alert(`Well, welcome ${visitor} ! You have a pretty good name.`);
+  } else {
+    alert(`Welcome, ${userName} ! I'm glad to see you here. Don't pretend to be ${visitor} next time (it's not a threat).`);
+  }
+} else {
+    alert(`Welcome, ${visitor} ! I'm glad to see you here. Enjoy your visit :D`);
+}
+    </script>
 </body>
 </html>
